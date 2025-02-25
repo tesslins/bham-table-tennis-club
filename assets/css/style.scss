@@ -12,6 +12,14 @@ body {
   padding: 2rem 6rem;
 }
 
+.page-header a {
+  display: none !important;
+}
+
+.project-tagline {
+  display: none !important;
+}
+
 .info-text {
   background-color: #ffffff; /* White background for a clean look */
   border: 1px solid #e0e0e0; /* Soft grey border */
