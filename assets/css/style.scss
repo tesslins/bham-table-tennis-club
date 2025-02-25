@@ -5,30 +5,61 @@
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
   
-
 .page-header {
-    padding: 2rem 6rem;
+  padding: 2rem 6rem;
+}
+
+.info-text {
+  background-color: #ffffff; /* White background for a clean look */
+  border: 1px solid #e0e0e0; /* Soft grey border */
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1rem; /* Standard text size */
+  line-height: 1.6; /* Adjusted line height for better readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .info-text div {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.info-text a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+.info-text a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image */
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    max-width: 100%;
-  }
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 100%;
+}
   
-  .main-img {
-    grid-column: span 2; /* Make the first image take full width */
-    width: 100%;
-  }
+.main-img {
+  grid-column: span 2; /* Make the first image take full width. */
+  width: 100%;
+}
   
-  .small-img {
-    width: 100%; /* Each smaller image takes 50% of the parent width */
-  }
+.small-img {
+  width: 100%; /* Each smaller image takes 50% of the full width. */
+}
