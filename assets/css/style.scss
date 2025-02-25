@@ -3,6 +3,32 @@
 
 @import "{{ site.theme }}";
 
-.info-text {
-    padding-bottom: 1rem;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+.page-header {
+    padding: 2rem 6rem;
 }
+
+.info-text div {
+    padding-bottom: 1.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  .main-img {
+    grid-column: span 2; /* Make the first image take full width */
+    width: 100%;
+  }
+  
+  .small-img {
+    width: 100%; /* Each smaller image takes 50% of the parent width */
+  }
